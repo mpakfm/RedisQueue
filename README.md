@@ -1,6 +1,8 @@
 # RedisQueue
 Redis Queue of PHP
 
+fork from https://github.com/woojean/RedisQueue
+
 
 # Demo
 ## Add task

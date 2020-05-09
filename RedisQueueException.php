@@ -6,8 +6,7 @@
  * Time: 10:04
  */
 
-namespace Queue\RedisQueue;
-
+namespace Mpakfm\RedisQueue;
 
 class RedisQueueException extends \Exception
 {

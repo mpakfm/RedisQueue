@@ -1,22 +1,23 @@
 {
-    "name": "woojean/php-redis-queue",
-    "description": "a redis queue of php",
+    "name": "mpakfm/php-redis-queue",
+    "description": "A redis queue of php. Fork from https://github.com/woojean/RedisQueue",
     "license": "MIT",
     "keywords": ["redis queue php"],
     "version": "1.0.0",
     "authors": [
         {
-            "name": "woojean",
-            "email": "168056828@qq.com"
+            "name": "mpakfm",
+            "email": "mpakfm@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.5.0"
+        "php": ">7.0",
+        "ext-json": "*"
     },
  
     "autoload": {
-        "psr-0": {
-            "Woojean\\RedisQueue": "src/"
+        "psr-4":{
+            "Mpakfm\\":""
         }
     }
 }

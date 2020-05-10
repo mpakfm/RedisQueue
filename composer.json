@@ -3,7 +3,7 @@
     "description": "A redis queue of php. Fork from https://github.com/woojean/RedisQueue",
     "license": "MIT",
     "keywords": ["redis queue php"],
-    "version": "1.0.2",
+    "version": "1.0.3",
     "authors": [
         {
             "name": "mpakfm",

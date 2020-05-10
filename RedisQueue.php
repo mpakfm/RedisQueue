@@ -49,9 +49,9 @@ class RedisQueue
             throw new RedisQueueException('Redis config name can not be empty!');
         }
 
-        $this->queueName = $queueName;
+        $this->queueName  = $queueName;
         $this->retryTimes = $retryTimes;
-        $this->waitTime = $waitTime;
+        $this->waitTime   = $waitTime;
 
         $ret = $this->init($redisConfig);
         if (false === $ret) {
@@ -265,7 +265,6 @@ class RedisQueue
         // add data
         $ret = $this->addData($index, $data);
         if (false == $ret) {
-
             throw new RedisQueueException('Add data failed!');
         }
 
@@ -273,7 +272,7 @@ class RedisQueue
     }
 
     // get message
-    public function get(): array
+    public function get(): ?array
     {
         // get index
         $index = $this->getIndex();

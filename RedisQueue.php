@@ -369,6 +369,23 @@ class RedisQueue
     }
 
     /**
+     * delete all indexes
+     */
+    public function delete(): void
+    {
+        $keysIL = $this->redis->keys($this->getIndexListName());
+        $keysBL = $this->redis->keys($this->getBlockedListName());
+        $keys   = array_merge($keysBL, $keysIL);
+        if (empty($keys)) {
+            return;
+        }
+        foreach ($keys as $key) {
+            $this->redis->del($key);
+        }
+        return;
+    }
+
+    /**
      * status
      */
     public function status(): array
